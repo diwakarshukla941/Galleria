@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleria |A photo search App</title>
+    <link rel="stylesheet" href="assets/common.css">
+    <link rel="stylesheet" href="assets/detail.css">
+</head> 
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="./"><img src="assets/logo.png" alt="logo" class="logo"></a>
+        <a href="./"><h1 class="title">Galleria</h1></a>
+
+        <form action="./search.html" method="get">
+            <input type="text" name="q" class="search" placeholder="Search Anything" autocomplete="off">
+            <input type="submit" value="search" class="search">
+        </form>
+    </nav>
+
+<!-- main Section -->
+    <section>
+        <h1 class="heading">&lt;DETAIL FOR - <span id="image_id"></span>/&gt; </h1>
+        <div class="detail">
+            <img src="" id="detail_image" alt="primary">
+            <div class="content">
+                <h1 id="description_text"></h1>
+                <br>
+                <h3>Uploaded by -@ <span id="username"></span> </h3>
+                <br>
+                <!-- date    -->
+                <h4>Date - <span id="upload_date"></span></h4>
+                <br>
+                <!-- like and view   -->
+                <h5><span id="like_count"></span>Likes (<span id="view_count"></span> Views)</h5>
+                <br>
+                <hr>
+                <br>
+                 <!-- alternate description -->
+                  <h1 class="description" id="alt_description"></h1>
+                  <br>
+                  <br>
+                  <br>
+                  <!-- color of image -->
+                   <h5>Base Color</h5>
+                   <div class="image_color" id="image_color"><span id="color_text"></span></div>
+                    <br>
+                    <br>
+                   <!-- download -->
+                    <a target="_blank" id="download_link" class="button">&lt;Download /&gt;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer page -->
+    <footer>
+        <a href="./"><h5>Galleria</h5></a>
+        <h1> | </h1>
+        <h5>Made with ❤️ by Diwakar Shukla</h5>
+        <h1> | </h1>
+        <a href="./"><h5>Github</h5></a>
+    </footer>
+
+
+    
+    <script src="assets/common.js"></script>
+    <script src="assets/details.js"></script>
+</body>
+</html>
